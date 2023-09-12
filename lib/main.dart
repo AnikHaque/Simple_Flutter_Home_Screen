@@ -47,16 +47,25 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.green,
+        leading: Image.network('https://static.vecteezy.com/system/resources/thumbnails/021/797/174/small/arrow-left-icon-isolated-on-white-background-vector.jpg',
+          width: 12.0,
+        ),
+        // Replace 'left_image.png' with the path to your left image asset.
         title: Text(
           widget.title,
-          textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
+
+        actions: [
+          Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlm_sEIi_htOXXc6vQqp2zUo-3fdamqS6uQw&usqp=CAU',width: 32.0,), // Replace with your right image URL.
+        ],
         centerTitle: true, // Center the title horizontally.
       ),
+
+
 
       body: Center(
 
